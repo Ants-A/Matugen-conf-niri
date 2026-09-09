@@ -1,0 +1,49 @@
+[config]
+version_check = false
+
+[config.wallpaper]
+command = "cp {{ image }} ~/.config/quickshell/assets/Wallpaper && convert ~/.config/quickshell/assets/Wallpaper -resize 512 ~/.config/quickshell/assets/Wallpaper"
+
+[templates.m3colors]
+input_path = '~/.config/matugen/templates/colors.json'
+output_path = '~/.local/state/quickshell/user/generated/colors.json'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-3.0/gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-4.0/gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.wallpaper]
+input_path = '~/.config/matugen/templates/wallpaper.txt'
+output_path = '~/.local/state/quickshell/user/generated/wallpaper/path.txt'
+
+[templates.niri]
+input_path='~/.config/matugen/templates/niri.kdl'
+output_path='~/.config/niri/colors.kdl'
+
+[templates.mpv]
+input_path = '~/.config/matugen/templates/mpv/mpv.conf'
+output_path = '~/.config/mpv/script-opts/niri_caelestia.conf'
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop/btop.theme'
+output_path = '~/.config/btop/themes/niri_caelestia.theme'
+
+[templates.quickshell]
+input_path = './templates/quickshell'
+output_path = '~/.config/quickshell/generated/colors.json'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-theme.conf'
+output_path = '~/.local/state/quickshell/user/generated/terminal/kitty-theme.conf'
+
+[templates.fish]
+input_path = "~/.config/matugen/templates/colors.fish"
+output_path = "~/.config/fish/conf.d/matugen-colors.fish"
+
+[templates.sequences]
+input_path = "~/.config/matugen/templates/sequences.txt"
+output_path = "~/.local/state/quickshell/user/generated/terminal/sequences.txt"
