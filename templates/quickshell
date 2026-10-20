@@ -1,11 +1,14 @@
-{
-  "md3": {<* for name, color in colors *>
-    "{{ name }}": "{{ color.default.hex }}"<* if {{ loop.last }} *><* else *>,<* endif *><* endfor *>
-  },
-  "palette": {<* for name, palette in palettes *><* for shade, color in palette *>
-    "{{ name }}{{ shade }}": "{{ color.hex }}"<* if {{ loop.last }} *><* else *>,<* endif *><* endfor *><* if {{ loop.last }} *><* else *>,<* endif *><* endfor *>
-  },
-  "base16": {<* for name, color in base16 *>
-    "{{ name }}": "{{ color.default.hex }}"<* if {{ loop.last }} *><* else *>,<* endif *><* endfor *>
-  }
+pragma Singleton
+import QtQuick
+import Quickshell
+
+Singleton {
+    readonly property color background_dark: "{{ colors.surface.default.hex | set_lightness: 2.0 }}"
+<* for name, color in colors *>
+    readonly property color {{ name }}: "{{ color.default.hex }}"
+<* endfor *>
+<* for name, palette in palettes *><* for shade, color in palette *>
+    readonly property color {{ name }}{{ shade }}: "{{ color.hex }}"
+<* endfor *><* endfor *>
 }
+

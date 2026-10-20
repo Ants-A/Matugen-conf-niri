@@ -34,7 +34,7 @@ output_path = '~/.config/btop/themes/niri_caelestia.theme'
 
 [templates.quickshell]
 input_path = './templates/quickshell'
-output_path = '~/.config/quickshell/generated/colors.json'
+output_path = '~/.config/quickshell/Colors.qml'
 
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty-theme.conf'
@@ -47,3 +47,8 @@ output_path = "~/.config/fish/conf.d/matugen-colors.fish"
 [templates.sequences]
 input_path = "~/.config/matugen/templates/sequences.txt"
 output_path = "~/.local/state/quickshell/user/generated/terminal/sequences.txt"
+
+[templates.hyprland]
+input_path  = "~/.config/matugen/templates/hyprland-colors.lua"
+output_path = "~/.config/hypr/colors.lua"
+post_hook   = "hyprctl reload"
