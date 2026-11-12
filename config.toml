@@ -2,7 +2,7 @@
 version_check = false
 
 [config.wallpaper]
-command = "cp {{ image }} ~/.config/quickshell/assets/Wallpaper && convert ~/.config/quickshell/assets/Wallpaper -resize 512 ~/.config/quickshell/assets/Wallpaper"
+command = "cp {{ image }} ~/.config/quickshell/assets/Wallpaper && magick ~/.config/quickshell/assets/Wallpaper -resize 512 ~/.config/quickshell/assets/Wallpaper"
 
 [templates.m3colors]
 input_path = '~/.config/matugen/templates/colors.json'
