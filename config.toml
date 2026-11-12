@@ -52,3 +52,7 @@ output_path = "~/.local/state/quickshell/user/generated/terminal/sequences.txt"
 input_path  = "~/.config/matugen/templates/hyprland-colors.lua"
 output_path = "~/.config/hypr/colors.lua"
 post_hook   = "hyprctl reload"
+
+[templates.vice]
+input_path = "/home/ant/.config/vice/matugen-color-template"
+output_path = "/home/ant/.config/vice/matugen-color"
