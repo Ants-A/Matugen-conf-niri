@@ -22,15 +22,15 @@ truncate_to_repo  = true
 
 [git_branch]
 symbol = ""
-format = "[$symbol $branch](bold {{colors.tertiary.default.hex}}) "
+format = "[$symbol $branch](bold #ca9ee6) "
 
 [git_status]
 format     = "($ahead_behind$staged$modified$untracked$deleted$conflicted)"
-ahead      = "[⇡$count ](bold {{colors.secondary.default.hex}})"
-behind     = "[⇣$count ](bold {{colors.secondary.default.hex}})"
-diverged   = "[⇡$ahead_count⇣$behind_count ](bold {{colors.secondary.default.hex}})"
-staged     = "[+$count ](bold {{colors.primary.default.hex}})"
-modified   = "[●$count ](bold {{colors.tertiary.default.hex}})"
+ahead      = "[⇡$count ](bold #81c8be)"
+behind     = "[⇣$count ](bold #81c8be)"
+diverged   = "[⇡$ahead_count⇣$behind_count ](bold #81c8be)"
+staged     = "[+$count ](bold #a6d189)"
+modified   = "[●$count ](bold #e5c890)"
 untracked  = "[?$count ](bold {{colors.on_surface.default.hex}})"
 deleted    = "[✘$count ](bold {{colors.error.default.hex}})"
 conflicted = "[⚡$count ](bold {{colors.error.default.hex}})"

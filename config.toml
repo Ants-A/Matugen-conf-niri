@@ -60,3 +60,7 @@ output_path = "/home/ant/.config/vice/matugen-color"
 [templates.starship]
 input_path = "~/.config/matugen/templates/starship.toml"
 output_path = "~/.config/zsh/starship.toml"
+
+[templates.zsh]
+input_path = "~/.config/matugen/templates/colors.zsh"
+output_path = "~/.cache/matugen/colors.zsh"
