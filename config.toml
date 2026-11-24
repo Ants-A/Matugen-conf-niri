@@ -56,3 +56,7 @@ post_hook   = "hyprctl reload"
 [templates.vice]
 input_path = "/home/ant/.config/vice/matugen-color-template"
 output_path = "/home/ant/.config/vice/matugen-color"
+
+[templates.starship]
+input_path = "~/.config/matugen/templates/starship.toml"
+output_path = "~/.config/zsh/starship.toml"

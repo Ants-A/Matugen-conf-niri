@@ -1,0 +1,57 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character"
+
+[os]
+disabled = false
+format = "[$symbol]({{colors.primary.default.hex}}) "
+
+[os.symbols]
+Ubuntu  = "󰕈"
+Artix   = "󰣇"
+Arch    = "󰣇"
+CachyOS = "󰣇"
+Macos   = ""
+
+[directory]
+format            = "[$path]({{colors.secondary.default.hex}}) "
+truncation_length = 4
+truncate_to_repo  = true
+
+[git_branch]
+symbol = ""
+format = "[$symbol $branch](bold {{colors.tertiary.default.hex}}) "
+
+[git_status]
+format     = "($ahead_behind$staged$modified$untracked$deleted$conflicted)"
+ahead      = "[⇡$count ](bold {{colors.secondary.default.hex}})"
+behind     = "[⇣$count ](bold {{colors.secondary.default.hex}})"
+diverged   = "[⇡$ahead_count⇣$behind_count ](bold {{colors.secondary.default.hex}})"
+staged     = "[+$count ](bold {{colors.primary.default.hex}})"
+modified   = "[●$count ](bold {{colors.tertiary.default.hex}})"
+untracked  = "[?$count ](bold {{colors.on_surface.default.hex}})"
+deleted    = "[✘$count ](bold {{colors.error.default.hex}})"
+conflicted = "[⚡$count ](bold {{colors.error.default.hex}})"
+
+[nodejs]
+symbol = ""
+format = "[$symbol $version]({{colors.primary.default.hex}}) "
+
+[rust]
+symbol = ""
+format = "[$symbol $version]({{colors.error.default.hex}}) "
+
+[golang]
+symbol = ""
+format = "[$symbol $version]({{colors.secondary.default.hex}}) "
+
+[php]
+symbol = ""
+format = "[$symbol $version]({{colors.tertiary.default.hex}}) "
+
+[character]
+success_symbol = "[❯]({{colors.primary.default.hex}})"
+error_symbol   = "[❯]({{colors.error.default.hex}})"
+vimcmd_symbol  = "[❮]({{colors.primary.default.hex}})"
