@@ -37,6 +37,10 @@ input_path = '~/.config/matugen/templates/kitty-theme.conf'
 output_path = '~/.local/state/quickshell/user/generated/terminal/kitty-theme.conf'
 post_hook = 'pkill -USR1 -u "$(id -u)" -x kitty || true'
 
+[templates.yazi]
+input_path = '~/.config/matugen/templates/yazi.toml'
+output_path = '~/.config/yazi/theme.toml'
+
 [templates.fish]
 input_path = "~/.config/matugen/templates/colors.fish"
 output_path = "~/.config/fish/conf.d/matugen-colors.fish"
