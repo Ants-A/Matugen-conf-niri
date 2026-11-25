@@ -35,6 +35,7 @@ output_path = '~/.config/quickshell/Colors.qml'
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty-theme.conf'
 output_path = '~/.local/state/quickshell/user/generated/terminal/kitty-theme.conf'
+post_hook = 'pkill -USR1 -u "$(id -u)" -x kitty || true'
 
 [templates.fish]
 input_path = "~/.config/matugen/templates/colors.fish"
