@@ -83,3 +83,10 @@ output_path = "~/.config/Vencord/themes/midnight.theme.css"
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 
+[templates.steam]
+input_path = '~/.config/matugen/templates/steam.css'
+output_path = '~/.config/AdwSteamGtk/custom.css'
+
+[templates.steam_quickcss]
+input_path = '~/.config/matugen/templates/steam-live.css'
+output_path = '~/.config/millennium/quick.css'
