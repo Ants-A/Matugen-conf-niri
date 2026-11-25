@@ -92,10 +92,9 @@ body {
 	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
 }
 
-/* Reduce Discord's spacer after the last message. */
 [data-list-id="chat-messages"] [class*="scrollerSpacer_"] {
-  height: 8px !important;
-  min-height: 8px !important;
+  height: 20px !important;
+  min-height: 20px !important;
 }
 
 /* Selected chat/friend text */
