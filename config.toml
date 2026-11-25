@@ -79,6 +79,3 @@ output_path = "~/.config/Vencord/themes/midnight.theme.css"
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 
-[templates.nvim]
-input_path = '~/.config/matugen/templates/nvim-tokyonight.lua'
-output_path = '~/.config/nvim/lua/plugins/matugen.lua'

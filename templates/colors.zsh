@@ -7,7 +7,5 @@ if (( ${+FAST_HIGHLIGHT_STYLES} )); then
 fi
 
 if [[ -o interactive && -t 1 && $TERM != dumb ]]; then
-  printf '\033]4;0;{{base16.base00.default.hex}}\a\033]4;1;{{colors.error.default.hex}}\a\033]4;2;#a6d189\a\033]4;3;#e5c890\a\033]4;4;#8caaee\a\033]4;5;#ca9ee6\a\033]4;6;#81c8be\a\033]4;7;{{base16.base05.default.hex}}\a'
-  printf '\033]4;8;{{base16.base03.default.hex}}\a\033]4;9;{{colors.error.default.hex}}\a\033]4;10;#a6d189\a\033]4;11;#e5c890\a\033]4;12;#8caaee\a\033]4;13;#ca9ee6\a\033]4;14;#81c8be\a\033]4;15;{{base16.base07.default.hex}}\a'
-  printf '\033]10;{{colors.on_background.default.hex}}\a\033]11;{{colors.background.default.hex}}\a\033]12;{{colors.primary.default.hex}}\a'
+  printf '\033]10;{{colors.on_background.default.hex}}\a\033]11;{{colors.surface.default.hex | set_lightness: 3.5}}\a\033]12;{{colors.primary.default.hex}}\a'
 fi
