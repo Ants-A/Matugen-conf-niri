@@ -98,6 +98,18 @@ body {
 }
 
 /* Selected chat/friend text */
+/* Discord draws the typing shadow in separate gradient overlays. */
+[class*="chatTypingGradientAtBottom_"],
+[class*="chatTypingGradientNotAtBottom_"],
+[class*="chatGradient_"] {
+  display: none !important;
+}
+
+[class*="typing_"][class*="inTextChannel_"] {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .selected_f5eb4b,
 .selected_f6f816 .link_d8bfb3 {
   color: var(--accent-3) !important;
