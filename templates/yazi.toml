@@ -1,3 +1,32 @@
+# Interface and file colors generated from the wallpaper.
+[mgr]
+cwd = { fg = "{{ colors.primary.default.hex }}" }
+border_style = { fg = "{{ colors.outline.default.hex }}" }
+
+[indicator]
+parent = { fg = "{{ colors.on_primary.default.hex }}", bg = "{{ colors.primary.default.hex }}" }
+current = { fg = "{{ colors.on_primary.default.hex }}", bg = "{{ colors.primary.default.hex }}" }
+preview = { underline = true, fg = "{{ colors.primary.default.hex }}" }
+
+[mode]
+normal_main = { fg = "{{ colors.on_primary.default.hex }}", bg = "{{ colors.primary.default.hex }}", bold = true }
+normal_alt = { fg = "{{ colors.primary.default.hex }}", bg = "{{ colors.surface_container_high.default.hex }}" }
+
+[status]
+progress_label = { fg = "{{ colors.on_primary.default.hex }}", bg = "{{ colors.primary.default.hex }}", bold = true }
+progress_normal = { fg = "{{ colors.primary.default.hex }}", bg = "{{ colors.surface_container_high.default.hex }}" }
+perm_type = { fg = "{{ colors.primary.default.hex }}" }
+perm_read = { fg = "{{ colors.secondary.default.hex }}" }
+perm_write = { fg = "{{ colors.tertiary.default.hex }}" }
+perm_exec = { fg = "{{ colors.primary.default.hex }}" }
+perm_sep = { fg = "{{ colors.outline.default.hex }}" }
+
+[filetype]
+rules = [
+  { url = "*", is = "orphan", fg = "{{ colors.error.default.hex }}" },
+  { url = "*/", fg = "{{ colors.primary.default.hex }}" },
+]
+
 # Yazi shipped icon rules, recolored by Matugen.
 [icon]
 globs = []
