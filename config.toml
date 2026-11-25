@@ -28,10 +28,6 @@ output_path='~/.config/niri/colors.kdl'
 input_path = '~/.config/matugen/templates/mpv/mpv.conf'
 output_path = '~/.config/mpv/script-opts/niri_caelestia.conf'
 
-[templates.btop]
-input_path = '~/.config/matugen/templates/btop/btop.theme'
-output_path = '~/.config/btop/themes/niri_caelestia.theme'
-
 [templates.quickshell]
 input_path = './templates/quickshell'
 output_path = '~/.config/quickshell/Colors.qml'
@@ -69,3 +65,17 @@ output_path = "~/.cache/matugen/colors.zsh"
 input_path = './templates/vicinae.toml'
 output_path = '~/.local/share/vicinae/themes/matugen.toml'
 post_hook = 'vicinae theme set matugen'
+
+[templates.vesktop]
+input_path = "~/.config/matugen/templates/midnight-discord.css"
+output_path = "~/.config/vesktop/themes/midnight.theme.css"
+post_hook = "python3 ~/.config/matugen/discord-background.py ~/.config/vesktop/themes/midnight.theme.css"
+
+[templates.vencord]
+input_path = "~/.config/matugen/templates/midnight-discord.css"
+output_path = "~/.config/Vencord/themes/midnight.theme.css"
+post_hook = "python3 ~/.config/matugen/discord-background.py ~/.config/Vencord/themes/midnight.theme.css"
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
