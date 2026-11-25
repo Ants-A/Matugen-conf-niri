@@ -70,12 +70,10 @@ post_hook = 'vicinae theme set matugen'
 [templates.vesktop]
 input_path = "~/.config/matugen/templates/midnight-discord.css"
 output_path = "~/.config/vesktop/themes/midnight.theme.css"
-post_hook = "python3 ~/.config/matugen/discord-background.py ~/.config/vesktop/themes/midnight.theme.css"
 
 [templates.vencord]
 input_path = "~/.config/matugen/templates/midnight-discord.css"
 output_path = "~/.config/Vencord/themes/midnight.theme.css"
-post_hook = "python3 ~/.config/matugen/discord-background.py ~/.config/Vencord/themes/midnight.theme.css"
 
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'

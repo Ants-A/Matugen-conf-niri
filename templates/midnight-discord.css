@@ -16,9 +16,9 @@
 
 /* customize things here */
 body {
-	--background-image: on;
+	--background-image: off;
 	--transparency-tweaks: on;
-	--remove-bg-layer: off;
+	--remove-bg-layer: on;
 }
 
 :root {
