@@ -1,0 +1,138 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "separator": " ",
+    "key": {
+      "width": 12
+    }
+  },
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/ascii.txt",
+    "color": {
+      "1": "{{colors.primary.default.hex}}",
+      "2": "green",
+      "3": "yellow",
+      "4": "blue",
+      "5": "magenta",
+      "6": "cyan",
+      "7": "white",
+      "8": "red",
+      "9": "magenta"
+    },
+    "padding": {
+      "top": 1,
+      "right": 2
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "{#{{colors.outline.default.hex}}}┌───────{#} {#{{colors.primary.default.hex}}}>> Welcome back! << {#}{#{{colors.outline.default.hex}}}───────┐{#}"
+    },
+    {
+      "type": "title",
+      "key": "User:",
+      "format": "{#{{colors.primary.default.hex}}}{user-name}{#}{#{{colors.on_surface.default.hex}}}@{#}{#{{colors.primary.default.hex}}}{host-name} {#}"
+    },
+    {
+      "type": "custom",
+      "format": "{#{{colors.outline.default.hex}}}└───────────────────────────────────┘{#}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{#{{colors.outline.default.hex}}}┌────────── {#}{#{{colors.secondary.default.hex}}}Soft- and Hardware {#}{#{{colors.outline.default.hex}}}──────────┐{#}"
+    },
+    {
+      "type": "os",
+      "key": "OS:",
+      "keyColor": "{{colors.tertiary.default.hex}}",
+      "format": "{name} {version} {arch}"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel:",
+      "keyColor": "{{colors.primary.default.hex}}",
+      "format": "{release}"
+    },
+    {
+      "type": "host",
+      "key": "Host:",
+      "keyColor": "{{colors.tertiary_fixed.default.hex}}",
+      "format": "{name}"
+    },
+    {
+      "type": "cpu",
+      "key": "CPU:",
+      "showPeCoreCount": true,
+      "keyColor": "{{colors.primary.default.hex}}",
+      "format": "{name<29} {#{{colors.outline.default.hex}}}"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU:",
+      "keyColor": "{{colors.tertiary_fixed.default.hex}}",
+      "format": "{name<24}      {#{{colors.outline.default.hex}}}"
+    },
+    {
+      "type": "memory",
+      "key": "MEMORY:",
+      "keyColor": "{{colors.secondary.default.hex}}",
+      "format": "{used} / {total} ({#{{colors.primary.default.hex}}}{percentage}{#})   {#{{colors.outline.default.hex}}}"
+    },
+    {
+      "type": "disk",
+      "key": "DISK:",
+      "keyColor": "{{colors.tertiary.default.hex}}",
+      "format": "{size-used} / {size-total} ({#{{colors.primary.default.hex}}}{size-percentage}{#}) {#{{colors.outline.default.hex}}}"
+    },
+    {
+      "type": "custom",
+      "format": "{#{{colors.outline.default.hex}}}└────────────────────────────────────────┘{#}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{#{{colors.outline.default.hex}}}┌────────── {#}{#{{colors.secondary.default.hex}}}System Details {#}{#{{colors.outline.default.hex}}}──────────┐{#}"
+    },
+    {
+      "type": "display",
+      "key": "DISPLAY:",
+      "keyColor": "{{colors.primary.default.hex}}",
+      "format": "{width}x{height} @ {refresh-rate} Hz"
+    },
+    {
+      "type": "uptime",
+      "key": "UPTIME:",
+      "keyColor": "{{colors.tertiary.default.hex}}",
+      "format": "{days}d {hours}h {minutes}m"
+    },
+    {
+      "type": "disk",
+      "key": "OS AGE:",
+      "keyColor": "{{colors.tertiary_fixed.default.hex}}",
+      "folders": "/",
+      "format": "{create-time:10} ({days} days)"
+    },
+    {
+      "type": "packages",
+      "key": "PACKAGES:",
+      "keyColor": "{{colors.secondary.default.hex}}",
+      "format": "{pacman} (pacman)"
+    },
+    {
+      "type": "localip",
+      "key": "LOCAL IP:",
+      "keyColor": "{{colors.primary.default.hex}}",
+      "showIpv6": false,
+      "format": "{ipv4} ({ifname})"
+    },
+    {
+      "type": "custom",
+      "format": "{#{{colors.outline.default.hex}}}└────────────────────────────────────┘{#}"
+    },
+    "break"
+  ]
+}

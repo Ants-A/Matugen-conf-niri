@@ -71,6 +71,10 @@ input_path = './templates/vicinae.toml'
 output_path = '~/.local/share/vicinae/themes/matugen.toml'
 post_hook = 'vicinae theme set matugen'
 
+[templates.fastfetch]
+input_path = '~/.config/matugen/templates/fastfetch.jsonc'
+output_path = '~/.config/fastfetch/config.jsonc'
+
 [templates.vesktop]
 input_path = "~/.config/matugen/templates/midnight-discord.css"
 output_path = "~/.config/vesktop/themes/midnight.theme.css"
